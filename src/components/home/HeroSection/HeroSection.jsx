@@ -1,8 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 import gsap from "gsap";
 import { ArrowUpRight } from "lucide-react";
+import { useNavigate } from "react-router-dom";
 
 const HomeHero = () => {
+  const navigate = useNavigate();
   const containerRef = useRef(null);
   const canvasRef = useRef(null);
   const timerRef = useRef(null);
@@ -215,7 +217,7 @@ const HomeHero = () => {
 
           {/* Actions & Navigation */}
           <div className="flex flex-wrap gap-10 items-center">
-            <button className="group relative px-10 py-4 bg-mainGold text-mainColor font-bold rounded-sm flex items-center gap-3 transition-all duration-500 hover:bg-mainColor hover:text-lightColor shadow-[0_20px_50px_rgba(197,163,99,0.15)]">
+            <button onClick={() => navigate("/about")} className="group relative px-10 py-4 bg-mainGold text-mainColor font-bold rounded-sm flex items-center gap-3 transition-all duration-500 hover:bg-mainColor hover:text-lightColor shadow-[0_20px_50px_rgba(197,163,99,0.15)]">
               <span className="tracking-[0.1em] text-xs uppercase">
                 Get Started
               </span>
