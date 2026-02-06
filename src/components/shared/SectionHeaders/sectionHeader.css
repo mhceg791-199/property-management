@@ -1,0 +1,43 @@
+.border-b-half {
+  position: relative;
+  display: inline-block;
+}
+
+.border-b-half::after {
+  content: "";
+  position: absolute;
+  bottom: -12px; 
+  left: 0;
+  width: 0;
+  height: 4px; 
+  background-color: var(--mainGold); 
+  transition: width 0.3s ease;
+}
+
+.border-b-half:hover::after {
+  width: 100%; 
+}
+
+.hoverOneLine {
+  position: relative;
+  display: inline-block;
+}
+
+.hoverOneLine::after {
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0;
+  width: 0;
+  height: 4px;
+  background-color: var(--mainGold);
+  transition: width 0.3s ease;
+}
+
+.hoverOneLine:hover::after {
+  width: 100%;
+}
+
+.headerSection:hover {
+  color: var(--mainGold);
+}

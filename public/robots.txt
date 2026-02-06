@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+Disallow: /node_modules/
+Disallow: /build/
+Disallow: /dist/
+Disallow: /public/home/home.mp4  
+
+Sitemap: https://mosaic-eng.com/sitemap.xml
