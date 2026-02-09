@@ -1,59 +1,13 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
-import {
-  ShieldCheck,
-  FileText,
-  BarChart3,
-  Settings,
-  PenTool,
-  Users,
-  Plus,
-} from "lucide-react";
+import { Plus } from "lucide-react";
 import PlexusBackground from "../../shared/PlexusCanvas/PlexusCanvas";
 import SectionHeader from "../../shared/SectionHeaders/SectionHeader";
+import sectors from "../../../data/home/sectors";
 
 const PropertyManagement = () => {
   const [activeSector, setActiveSector] = useState(null);
   const containerRef = useRef(null);
-
-  const sectors = [
-    {
-      id: "01",
-      icon: <FileText size={22} />,
-      title: "Agreements",
-      desc: "Clearly defined management agreements",
-    },
-    {
-      id: "02",
-      icon: <BarChart3 size={22} />,
-      title: "Budgets",
-      desc: "Approved budgets and financial controls",
-    },
-    {
-      id: "03",
-      icon: <Settings size={22} />,
-      title: "Maintenance",
-      desc: "Preventive maintenance planning",
-    },
-    {
-      id: "04",
-      icon: <PenTool size={22} />,
-      title: "Operation",
-      desc: "Documented operational procedures",
-    },
-    {
-      id: "05",
-      icon: <ShieldCheck size={22} />,
-      title: "Reporting",
-      desc: "Regular reporting and performance oversight",
-    },
-    {
-      id: "06",
-      icon: <Users size={22} />,
-      title: "Communication",
-      desc: "Professional communication with owners and tenants",
-    },
-  ];
 
   useEffect(() => {
     gsap.from(".grid-line", {
@@ -108,7 +62,7 @@ const PropertyManagement = () => {
               {isActive && (
                 <PlexusBackground
                   particleCount={25}
-                  lineColor="rgba(197, 163, 99, 0.2)"
+                  lineColor="rgba(197, 163, 99, 0.4)"
                   className="opacity-100"
                 />
               )}

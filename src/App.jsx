@@ -18,6 +18,7 @@ import Privacy from "./pages/Privacy/Privacy";
 function App() {
   return (
     <>
+    
       <Routes>
         <Route
           path="/*"
@@ -36,6 +37,15 @@ function App() {
           }
         />
       </Routes>
+      {/* Global Grid Background */}
+      <div
+        className="fixed inset-0 z-0 opacity-[0.04] pointer-events-none"
+        style={{
+          backgroundImage:
+            "linear-gradient(#1C2536 1px, transparent 1px), linear-gradient(90deg, #1C2536 1px, transparent 1px)",
+          backgroundSize: "60px 60px",
+        }}
+      />
       <ScrollToTopButton />
     </>
   );

@@ -24,6 +24,32 @@
   }
 }
 
+@keyframes fillProgress {
+  0% {
+    transform: scaleX(0);
+  }
+
+  100% {
+    transform: scaleX(1);
+  }
+}
+
+.perspective-1000 {
+  perspective: 1000px;
+}
+
+.shadow-glow {
+  box-shadow: 0 0 15px rgba(197, 163, 99, 0.3);
+}
+
+.-translate-z-10 {
+  transform: translateZ(-50px) rotateY(-10deg);
+}
+
+.-translate-z-20 {
+  transform: translateZ(-100px) rotateY(-10deg);
+}
+
 /* Hide horizontal scrollbar */
 /* .scrollbar-hide::-webkit-scrollbar {
   display: none;
@@ -38,4 +64,3 @@
 .backface-hidden {
   backface-visibility: hidden;
 } */
-

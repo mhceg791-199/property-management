@@ -35,10 +35,10 @@ function ContactMapDetails() {
           <div>
             <h4 className="text-lg font-semibold">Do you have a Question?</h4>
             <a
-              href="mailto:info@mosaicholding.com"
+              href="mailto:info@mosaic-propmgmt.com"
               className="text-gray-400 text-md hover:text-mainGold transition-colors duration-300"
             >
-              info@mosaicholding.com
+              info@mosaic-propmgmt.com
             </a>
           </div>
         </div>
