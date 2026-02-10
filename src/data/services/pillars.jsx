@@ -15,7 +15,7 @@ import {
         "Preventive maintenance planning",
         "Coordination of repairs and service providers",
         "Emergency response and issue resolution",
-        "Oversight of building systems",
+        "Oversight of building systems and asset condition",
       ],
     },
     {

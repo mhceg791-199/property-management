@@ -1,4 +1,4 @@
-import vid from "../../../../assets/about/vid-about.mp4";
+import vid from "../../../../assets/about/vid-about.webm";
 
 const GovernanceVideoBackground = () => {
   return (
