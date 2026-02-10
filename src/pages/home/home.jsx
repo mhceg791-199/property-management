@@ -12,8 +12,8 @@ export default function home() {
       <MosaicOverview />
       <MosaicWhatWeDo />
       <PropertyManagementContainer />
-      <MosaicKeyDifferentiatorContainer/>
-      <MosaicLicensingContainer/>
+      <MosaicKeyDifferentiatorContainer />
+      <MosaicLicensingContainer />
     </>
   );
 }
