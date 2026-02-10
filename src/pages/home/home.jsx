@@ -1,8 +1,8 @@
-import HomeHero from "../../components/home/HeroSection/HeroSection";
-import MosaicKeyDifferentiator from "../../components/home/MosaicKeyDifferentiator/MosaicKeyDifferentiator";
-import MosaicLicensingSection from "../../components/home/MosaicLicensing/MosaicLicensing";
-import MosaicOverview from "../../components/home/Overview/Overview";
-import PropertyManagement from "../../components/home/PropertyManagement/PropertyManagement";
+import HomeHero from "../../components/home/HeroSection/HomeHero.container";
+import MosaicKeyDifferentiatorContainer from "../../components/home/MosaicKeyDifferentiator/MosaicKeyDifferentiator.container";
+import MosaicLicensingContainer from "../../components/home/MosaicLicensing/MosaicLicensing.container";
+import MosaicOverview from "../../components/home/Overview/MosaicOverview.container";
+import PropertyManagementContainer from "../../components/home/PropertyManagement/PropertyManagement.container";
 import MosaicWhatWeDo from "../../components/home/WhatWeDo/WhatWeDo";
 
 export default function home() {
@@ -11,9 +11,9 @@ export default function home() {
       <HomeHero />
       <MosaicOverview />
       <MosaicWhatWeDo />
-      <PropertyManagement />
-      <MosaicKeyDifferentiator/>
-      <MosaicLicensingSection/>
+      <PropertyManagementContainer />
+      <MosaicKeyDifferentiatorContainer/>
+      <MosaicLicensingContainer/>
     </>
   );
 }
