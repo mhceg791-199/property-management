@@ -1,8 +1,5 @@
 import FirstSectionByVideo from "../../components/shared/FirstSectionByVideo/FirstSectionByVideo";
 import DescriptionAbout from "../../components/shared/DescriptionAbout/DescriptionAbout";
-// import MosaicMissionVision from "../../components/about/MosaicMissionVision/MosaicMissionVision";
-// import EngineeringScope from "../../components/about/EngineeringScope/EngineeringScope";
-// import GovernanceEngineering from "../../components/about/GovernanceEngineering/GovernanceEngineering";
 import MosaicMissionVisionContainer from "../../components/about/MosaicMissionVision/MosaicMissionVision.container";
 import EngineeringScopeContainer from "../../components/about/EngineeringScope/EngineeringScope.container";
 import GovernanceStructuralHero from "../../components/about/GovernanceEngineering/GovernanceStructuralHero.container";
@@ -27,12 +24,9 @@ function About() {
         particleColors={["#1C2536", "#1C2536"]}
         height="h-[70vh] md:h-[55vh]"
       />
-      <MosaicMissionVisionContainer/>
-      <EngineeringScopeContainer/>
-      <GovernanceStructuralHero/>
-      {/* <MosaicMissionVision /> */}
-      {/* <EngineeringScope /> */}
-      {/* <GovernanceEngineering /> */}
+      <MosaicMissionVisionContainer />
+      <EngineeringScopeContainer />
+      <GovernanceStructuralHero />
     </>
   );
 }

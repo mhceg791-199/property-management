@@ -1,9 +1,6 @@
-// import MosaicApproach from "../../components/Services/MosaicApproach/MosaicApproach";
 import MosaicApproachContainer from "../../components/Services/MosaicApproach/MosaicApproach.container";
 import MosaicPillarSlider from "../../components/Services/PropertyDelivery/MosaicPillarSlider.container";
-// import PropertyDelivery from "../../components/Services/PropertyDelivery/PropertyDelivery";
 import WhatWeManageCards from "../../components/Services/WhatWeManage/WhatWeManageCards.container";
-// import WhatWeManage from "../../components/Services/WhatWeManage/WhatWeManage";
 import DescriptionAbout from "../../components/shared/DescriptionAbout/DescriptionAbout";
 import FirstSectionByVideo from "../../components/shared/FirstSectionByVideo/FirstSectionByVideo";
 
@@ -23,12 +20,9 @@ export default function Services() {
         particleColors={["#1C2536", "#1C2536"]}
         height="h-[50vh] md:h-[55vh]"
       />
-      <WhatWeManageCards/>
-      <MosaicPillarSlider/>
-      <MosaicApproachContainer/>
-      {/* <WhatWeManage /> */}
-      {/* <PropertyDelivery /> */}
-      {/* <MosaicApproach /> */}
+      <WhatWeManageCards />
+      <MosaicPillarSlider />
+      <MosaicApproachContainer />
     </>
   );
 }
