@@ -7,11 +7,7 @@ const FocusStatement = () => {
       </p>
 
       <p className="text-sm md:text-lg font-light text-lightColor/70 leading-relaxed max-w-3xl mx-auto">
-        This clear scope allows us to maintain{" "}
-        <span className="text-white font-medium">
-          focus, depth, and consistency
-        </span>{" "}
-        across the assets we manage.
+        This clear scope allows us to maintain focus, depth, and consistency across the assets we manage.
       </p>
     </div>
   );

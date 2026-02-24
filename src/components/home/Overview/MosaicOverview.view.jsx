@@ -53,7 +53,7 @@ const MosaicOverviewView = ({
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           <div className="lg:col-span-5 content-fade">
             <p className="text-mainColor/70 text-lg leading-relaxed">
-              Mosaic Property Management is a subsidiary of{" "}
+              Mosaic Property Management is a subsidiary of <br/>
               <Link
                 to="https://mosaicholding.com/"
                 target="_blank"

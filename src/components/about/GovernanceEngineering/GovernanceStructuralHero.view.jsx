@@ -58,11 +58,8 @@ const GovernanceStructuralHeroView = ({ containerRef }) => {
             {/* Closing */}
             <p className="gov-animate text-sm md:text-base lg:text-lg opacity-70 leading-relaxed max-w-3xl">
               These principles shape our internal culture and ensure that we
-              operate with
-              <span className="text-white font-bold ml-2">
-                integrity, transparency, and reliability
-              </span>{" "}
-              — for property owners, tenants, and stakeholders.
+              operate with integrity, transparency, and reliability — for
+              property owners, tenants, and stakeholders.
             </p>
           </div>
         </div>
