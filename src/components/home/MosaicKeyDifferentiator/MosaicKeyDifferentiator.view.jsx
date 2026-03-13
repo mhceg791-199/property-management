@@ -76,16 +76,19 @@ const MosaicKeyDifferentiatorView = ({
                   >
                     {item.title}
                   </span>
-
-                  {/* <span
-                    className={`text-[12px] font-bold tracking-tighter transition-all duration-300
+                  {isActive && (
+                    <span
+                      className={`text-[12px] font-bold transition-all duration-300
       ${isActive ? "opacity-100 text-mainGold" : "opacity-40 text-mainColor"}`}
-                  >
-                    PROVIDED BY:
-                    {item.companies.map((company, idx) => (
-                      <Fragment key={idx}>{company.name}</Fragment>
-                    ))}
-                  </span> */}
+                    >
+                      PROVIDED BY:
+                      {technicalData[activeIdx].companies.map(
+                        (company, idx) => (
+                          <Fragment key={idx}> {company.name} </Fragment>
+                        ),
+                      )}
+                    </span>
+                  )}
 
                   {isActive && (
                     <ChevronRight
