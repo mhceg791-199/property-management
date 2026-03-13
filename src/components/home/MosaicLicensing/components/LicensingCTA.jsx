@@ -11,7 +11,7 @@ const LicensingCTA = ({ onNavigate }) => {
         <div className="md:col-span-8 space-y-4">
           <h3 className="text-xl md:text-3xl font-black uppercase tracking-tighter text-mainColor">
             Looking for a licensed, <br />
-            <span className="text-mainGold italic font-light">
+            <span className="text-mainGold font-light">
               disciplined approach
             </span>{" "}
             to property management?

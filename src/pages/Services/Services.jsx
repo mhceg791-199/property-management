@@ -1,4 +1,4 @@
-import MosaicApproachContainer from "../../components/Services/MosaicApproach/MosaicApproach.container";
+// import MosaicApproachContainer from "../../components/Services/MosaicApproach/MosaicApproach.container";
 import MosaicPillarSlider from "../../components/Services/PropertyDelivery/MosaicPillarSlider.container";
 import WhatWeManageCards from "../../components/Services/WhatWeManage/WhatWeManageCards.container";
 import DescriptionAbout from "../../components/shared/DescriptionAbout/DescriptionAbout";
@@ -22,7 +22,7 @@ export default function Services() {
       />
       <WhatWeManageCards />
       <MosaicPillarSlider />
-      <MosaicApproachContainer />
+      {/* <MosaicApproachContainer /> */}
     </>
   );
 }

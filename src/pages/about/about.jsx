@@ -6,7 +6,7 @@ import GovernanceStructuralHero from "../../components/about/GovernanceEngineeri
 
 function About() {
   const paragraphs = [
-    "Mosaic Property Management was established as part of the broader vision of Mosaic Holding Corporation — a platform built on the belief that strong, resilient organizations are formed when the right pieces come together with clarity and purpose.",
+    "Mosaic Property Management was established as a subsidiary of Mosaic Holding Corporation — a platform built on the belief that strong, resilient organizations are formed when the right pieces come together with clarity and purpose.",
 
     "Within this ecosystem, Mosaic Property Management represents the operational core of real estate ownership. It is where assets are cared for, systems are coordinated, and long-term value is preserved through disciplined execution.",
 

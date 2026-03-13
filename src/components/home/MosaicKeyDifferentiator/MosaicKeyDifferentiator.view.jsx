@@ -1,5 +1,6 @@
 import { ChevronRight } from "lucide-react";
 import SectionHeader from "../../shared/SectionHeaders/SectionHeader";
+import { Fragment } from "react";
 
 const MosaicKeyDifferentiatorView = ({
   technicalData,
@@ -29,7 +30,7 @@ const MosaicKeyDifferentiatorView = ({
                 Mosaic Property Management
               </span>{" "}
               apart is access to integrated technical expertise through the
-              Mosaic platform.
+              subsidiaries of Mosaic Holding.
             </p>
           </div>
 
@@ -71,14 +72,20 @@ const MosaicKeyDifferentiatorView = ({
 
                   <span
                     className={`uppercase tracking-widest text-xs md:text-sm font-black transition-colors
-                      ${
-                        isActive
-                          ? "text-mainColor"
-                          : "text-mainColor/40"
-                      }`}
+                      ${isActive ? "text-mainColor" : "text-mainColor/40"}`}
                   >
                     {item.title}
                   </span>
+
+                  {/* <span
+                    className={`text-[12px] font-bold tracking-tighter transition-all duration-300
+      ${isActive ? "opacity-100 text-mainGold" : "opacity-40 text-mainColor"}`}
+                  >
+                    PROVIDED BY:
+                    {item.companies.map((company, idx) => (
+                      <Fragment key={idx}>{company.name}</Fragment>
+                    ))}
+                  </span> */}
 
                   {isActive && (
                     <ChevronRight
@@ -121,6 +128,21 @@ const MosaicKeyDifferentiatorView = ({
 
               <div className="absolute bottom-4 left-4 p-3 bg-mainColor text-white shadow-xl">
                 {technicalData[activeIdx].icon}
+              </div>
+
+              {/* Company Badge */}
+              <div className="absolute top-4 left-4 space-y-1">
+                {technicalData[activeIdx].companies.map((company, idx) => (
+                  <a
+                    key={idx}
+                    href={company.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="block bg-white/95 backdrop-blur-sm px-3 py-1.5 text-sm md:text-xl font-bold text-mainColor tracking-wide border-l-2 border-mainGold shadow-md hover:bg-mainGold hover:text-white transition"
+                  >
+                    {company.name}
+                  </a>
+                ))}
               </div>
 
               <div className="absolute top-0 left-0 w-8 h-8 border-t border-l border-mainGold/40" />

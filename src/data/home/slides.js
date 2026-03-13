@@ -14,7 +14,7 @@ const slides = [
     {
       line1: "Property",
       line2: "Management",
-      sub: "Backed by Engineering Expertise.",
+      sub: "Backed by Global Experts.",
       color: "#c5a363",
     },
     {
