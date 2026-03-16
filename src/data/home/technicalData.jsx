@@ -65,7 +65,7 @@ const technicalData = [
         url: "https://mosaic-eng.com/",
       },
       {
-        name: "Wolsey",
+        name: "Wolsey Structural Engineering",
         url: "https://www.wolsey.ca/",
       },
     ],
