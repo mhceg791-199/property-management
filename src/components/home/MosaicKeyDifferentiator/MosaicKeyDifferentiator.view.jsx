@@ -78,18 +78,25 @@ const MosaicKeyDifferentiatorView = ({
                   </span>
                   {isActive && (
                     <div
-                      className={`text-[12px] font-bold transition-all duration-300 flex flex-col
-  ${isActive ? "opacity-100 text-mainGold" : "opacity-40 text-mainColor"}`}
+                      className={`flex flex-col items-start text-left transition-all duration-300 ml-4
+      ${isActive ? "opacity-100 text-mainGold" : "opacity-40 text-mainColor"}`}
                     >
-                      <span>PROVIDED BY:</span>
+                      {/* عنوان ثابت صغير */}
+                      <span className="text-[12px] font-bold uppercase opacity-60">
+                        Provided by:
+                      </span>
 
-                      {technicalData[activeIdx].companies.map(
-                        (company, idx) => (
-                          <span key={idx} className="text-mainColor">
+                      {/* قائمة الشركات تحت بعضها */}
+                      <div className="flex flex-col">
+                        {item.companies.map((company, idx) => (
+                          <span
+                            key={idx}
+                            className="text-[12px] font-bold leading-tight tracking-tight"
+                          >
                             {company.name}
                           </span>
-                        ),
-                      )}
+                        ))}
+                      </div>
                     </div>
                   )}
 
