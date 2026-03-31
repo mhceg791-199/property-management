@@ -1,0 +1,17 @@
+export const POSITIONS = [
+  "Civil Engineer",
+  "Structural Engineer",
+  "Mechanical Engineer (MEP)",
+  "Electrical Engineer",
+  "Project Manager",
+  "Planning Engineer",
+  "Quantity Surveyor",
+  "Site Engineer",
+  "Technical Office Engineer",
+  "Business Development Specialist",
+  "Consulting Engineer",
+  "Infrastructure Engineer",
+  "HSE Engineer",
+  "Procurement Engineer",
+  "Other",
+];

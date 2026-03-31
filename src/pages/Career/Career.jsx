@@ -1,3 +1,4 @@
+import ApplicationForm from "../../components/Career/ApplicationForm/ApplicationForm";
 import DomeGallery from "../../components/Career/DomeGallery/DomeGallery";
 import ReadyToJoin from "../../components/Career/ReadyToJoin/ReadyToJoin";
 import DescriptionAbout from "../../components/shared/DescriptionAbout/DescriptionAbout";
@@ -21,6 +22,7 @@ function Career() {
         height="h-[30vh] md:h-[40vh]"
       />
       <ReadyToJoin />
+      <ApplicationForm/>
     </>
   );
 }

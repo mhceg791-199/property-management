@@ -1,6 +1,8 @@
 import { useState } from "react";
 import { Toaster, toast } from "react-hot-toast";
 import SectionHeader from "../../shared/SectionHeaders/SectionHeader";
+import axios from "axios";
+import { API_ENDPOINTS } from "../../../config/api";
 
 export default function ContactForm() {
   const [form, setForm] = useState({
@@ -16,21 +18,17 @@ export default function ContactForm() {
     setForm({ ...form, [e.target.name]: e.target.value });
   };
 
+  
+
   const handleSubmit = async (e) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      const res = await fetch("https://mhc-backend-ten.vercel.app/api/contact/send", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(form),
-      });
+      const response = await axios.post(API_ENDPOINTS.sendContact, form);
 
-      const data = await res.json();
-
-      if (res.ok) {
-        toast.success(data.message || "Message sent successfully!", {
+      if (response.status === 200 || response.status === 201) {
+        toast.success(response.data.message || "Message sent successfully!", {
           duration: 4000,
           position: "top-center",
           style: {
@@ -41,12 +39,18 @@ export default function ContactForm() {
         });
 
         // Reset form
-        setForm({ name: "", email: "", message: "" });
-      } else {
-        toast.error(data.message || "Failed to send message");
+        setForm({
+          name: "",
+          email: "",
+          message: "",
+          site: { name: "Mosaic Property Management", url: "https://mosaic-propmgmt.com" },
+        });
       }
     } catch (err) {
-      toast.error("Something went wrong. Please try again.");
+      const errorMessage =
+        err.response?.data?.message ||
+        "Something went wrong. Please try again.";
+      toast.error(errorMessage);
     } finally {
       setLoading(false);
     }
